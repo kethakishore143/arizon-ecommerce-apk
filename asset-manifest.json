@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/arizon-ecommerce-apk/static/css/main.1d3e6d1a.css",
-    "main.js": "/arizon-ecommerce-apk/static/js/main.b1f401ca.js",
+    "main.js": "/arizon-ecommerce-apk/static/js/main.a6b75038.js",
     "static/js/453.e0d8690e.chunk.js": "/arizon-ecommerce-apk/static/js/453.e0d8690e.chunk.js",
     "index.html": "/arizon-ecommerce-apk/index.html",
     "main.1d3e6d1a.css.map": "/arizon-ecommerce-apk/static/css/main.1d3e6d1a.css.map",
-    "main.b1f401ca.js.map": "/arizon-ecommerce-apk/static/js/main.b1f401ca.js.map",
+    "main.a6b75038.js.map": "/arizon-ecommerce-apk/static/js/main.a6b75038.js.map",
     "453.e0d8690e.chunk.js.map": "/arizon-ecommerce-apk/static/js/453.e0d8690e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d3e6d1a.css",
-    "static/js/main.b1f401ca.js"
+    "static/js/main.a6b75038.js"
   ]
 }
