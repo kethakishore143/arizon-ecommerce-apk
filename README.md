@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# E-Commerce Frontend Using React.js and Tailwind CSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a fully responsive e-commerce frontend built with React.js and styled using Tailwind CSS. It features a dynamic home page, product listing, cart management, and more, providing a smooth shopping experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Home Page Design (Responsive with Tailwind CSS)
 
-### `npm start`
+- Attractive, responsive home page inspired by the [Mellow Theme](https://themewagon.github.io/mellow/)
+  - **Header**: Includes logo, navigation links, and a cart icon.
+  - **Hero Section**: A large, visually appealing section to introduce the site.
+  - **Featured Products Section**: Displays selected products in a grid format.
+  - **Footer**: Basic footer with links and information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Product Listing Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Products are fetched from a public dummy API (e.g., [FakeStoreAPI](https://fakestoreapi.com/products)).
+- **Product Cards**: Display each product in a responsive grid with:
+  - Product Image
+  - Title
+  - Price
+  - "Add to Cart" button
 
-### `npm test`
+### 3. Mini Cart Component
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- When products are added to the cart, a **mini cart dropdown** is shown when the cart icon is clicked.
+  - **Mini Cart** displays:
+    - List of added products with image, title, quantity, and price.
+    - Subtotal of the cart.
+    - **View Cart** button to navigate to the full cart page.
+    - **Checkout** button (disabled until there are products in the cart).
 
-### `npm run build`
+### 4. Full Cart Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Accessible via the "View Cart" button from the mini cart.
+- Displays:
+  - Product details (image, title, price)
+  - Quantity adjusters (+, - buttons)
+  - Option to remove items from the cart
+  - Order summary (subtotal, shipping, total)
+  - **Proceed to Checkout** button.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technical Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js**: App Router preferred for navigation.
+- **Tailwind CSS**: For styling and ensuring responsive design.
+- **State Management**: Use React hooks (Context API or Zustand recommended).
+- **API Integration**: Fetch products from an external API (`https://fakestoreapi.com/products`).
+- **Responsive Design**: The app should be fully responsive and optimized for all screen sizes.
+- **Error Handling**: Proper error handling for API requests.
+- **Loading States**: Show loading indicators during data fetch operations.
+- **Clean Code**: Follow best practices for writing clean and maintainable code.
 
-### `npm run eject`
+## Bonus Features (Optional)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Product Search Functionality**: Allow users to search for products by name.
+- **Product Filtering/Sorting**: Implement filters to sort products by categories, price, etc.
+- **LocalStorage Persistence**: Persist the cart data to `localStorage` so it's available even after refreshing the page.
+- **Animations/Transitions**: Add smooth animations and transitions for a better user experience.
+- **Dark Mode Toggle**: Implement a dark mode toggle feature for better accessibility and user preference.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup & Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone this repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/kethakishore143/arizon-ecommerce-apk.git
+   ```
 
-## Learn More
+## Navigate to the project directory
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+cd arizon-ecommerce-apk
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Install the required dependencies:
 
-### Code Splitting
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Run the app in development mode:
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## The app will be available at http://localhost:3000/arizon-ecommerce-apk
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React.js: For building the user interface.
 
-### Advanced Configuration
+Tailwind CSS: For responsive, utility-first CSS styling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Context API For state management.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Axios / Fetch API: For making HTTP requests to fetch product data.
