@@ -11,7 +11,7 @@ function App() {
     <Router>
       <CartProvider>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/arizon-ecommerce-apk" element={<Home/>} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
       </CartProvider>
